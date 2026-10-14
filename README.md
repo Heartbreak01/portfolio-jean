@@ -20,3 +20,12 @@ npm run build    # build produksi (hasil di tailwind/dist)
 
 - `node_modules/` tidak ikut di-upload (di-ignore lewat `.gitignore`); jalankan `npm install` untuk membuatnya kembali.
 - `html/tentang.html` memakai video `video-aktivitas.MOV` (sekitar 86 MiB).
+
+## Online (GitHub Pages)
+
+Setiap `git push` ke branch `main` otomatis dideploy lewat `.github/workflows/deploy.yml`:
+
+- Situs statis: `https://USERNAME.github.io/NAMA-REPO/`
+- Demo Tailwind: `https://USERNAME.github.io/NAMA-REPO/tailwind/`
+
+Aktifkan sekali di **Settings > Pages > Build and deployment > Source: GitHub Actions**.
